@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More Music</title>
+    <link rel="icon" type="image/png" href="Imagenes/Logo proyecto (este si).png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="container-form register">
+        <div class="information">
+            <div class="info-childs">
+                <h2>Bienvenido/a</h2>
+                <p>Para unirte a nuestra comunidad de "More Music" por favor Inicia Sesión con tu datos. 
+                    <br> O si ya tienes una cuenta inicia sesión aquí.
+                </p>
+                <input type="button" value="Iniciar Sesión" id="sign-in">
+            </div>
+        </div>
+
+        <div class="form-information">
+            <div class="form-information-childs">
+                <h2>Crear una cuenta</h2>
+                <div class="icons">
+                    <i class='bx bxl-gmail' ></i>
+                    <i class='bx bxl-facebook-circle' ></i>
+                </div>
+                <p>o usa tu correo para registrarte</p>
+            
+                <form class="form form-register" novalidate>
+                    <div>
+                        <label class="error">
+                            <i class='bx bx-user-pin' ></i>
+                            <input type="text" placeholder="Nombre Usuario" name="userName">
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            <i class='bx bx-envelope' ></i>
+                            <input type="email" placeholder="Correo electrónico" name="userEmail">
+                        </label> 
+                    </div>
+                    <div>
+                        <label>
+                            <i class='bx bx-lock-alt' ></i>
+                            <input type="password" placeholder="Contraseña" name="userPassword">
+                        </label>
+                    </div>
+                    <input type="submit" value="Registrarse">
+                    <div class="alerta-error">Todos los campos son obligatorios</div>
+                    <div class="alerta-exito">Te registraste correctamente</div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-form login hide">
+        <div class="information">
+            <div class="info-childs">
+                <h2>Bienvenido/a nuevamente</h2>
+                <p>Inicia Sesión con tu datos.
+                    <br>Si no posees una cuenta puedes registrarte aquí.
+                </p>
+                <input type="button" value="Registrate" id="sign-up">
+            </div>
+        </div>
+
+        <div class="form-information">
+            <div class="form-information-childs">
+                <h2>Iniciar Sesión</h2>
+                <div class="icons">
+                    <i class='bx bxl-gmail' ></i>
+                    <i class='bx bxl-facebook-circle' ></i>
+                </div>
+                <p>o Inicia sesión con una cuenta</p>
+            
+                <form class="form form-login" novalidate>
+                    <div>
+                        <label>
+                            <i class='bx bx-envelope' ></i>
+                            <input type="email" placeholder="Correo Electrónico" name="userEmail">
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            <i class='bx bx-lock-alt' ></i>
+                            <input type="password" placeholder="Contraseña" name="userPassword">
+                        </label>
+                    </div>
+                    <input type="submit" value="Iniciar Sesión">
+                    <div class="alerta-error">Todos los campos son obligatorios</div>
+                    <div class="alerta-exito">Iniciaste sesión correctamente</div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js" ></script>
+    <script src="js/register.js"></script>
+    <script src="js/login.js"></script>
+</body>
+</html>
